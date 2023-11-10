@@ -1,0 +1,13 @@
+<!DOCTYPE grading [
+    <!ELEMENT desc ANY>
+    <!ELEMENT grading (name|mode*)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT mode (grade*)>
+    <!ATTLIST mode
+        type (theory | lab)     "theory">
+    <!ELEMENT grade (#PCDATA)>
+    <!ATTLIST grade
+        id  ID                  #REQUIRED
+        avg (below | above)     #IMPLIED
+    >
+]>
